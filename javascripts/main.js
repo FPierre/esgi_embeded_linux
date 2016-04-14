@@ -27,9 +27,9 @@ httpGetAsync(theUrl, function(str){
 				console.log("time", time);
 				break;
 			}
-		}
-		console.log("data",data);
 	});
+		console.log("data",data);
+});
 
 function httpGetAsync(theUrl, callback)
 {
