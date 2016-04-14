@@ -5,14 +5,18 @@ var theUrl = "https://api.mlab.com/api/1/databases/linuxem/collections/temp?apiK
 var test;
 httpGetAsync(theUrl, function(str){
 	console.log("data", str);
-	var data = JSON.parse(str);
-	console.log("data after parse", str);
-	var temperature = data.temperature;
+	var data = JSON.parse(str, function(k, v) {
+		console.log("k", k);
+		console.log("v", v);
+	var temperature = k[2];
 	console.log("temp", temperature);
 	var date = data.date;
 	console.log("date", date);
 	var time = data.time;
 	console.log("time", time);
+	});
+	console.log("data after parse", str);
+	
 });
 
 function httpGetAsync(theUrl, callback)
