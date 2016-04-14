@@ -100,6 +100,14 @@ div.margin-left-50 {
   margin-left: 50px;
 }
 
+div.separator {
+    border-bottom: 1px dashed #b5e853;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }    
+
+/*----------- */
+
 #main_content h1 {
   font-size: 30px;
 }
