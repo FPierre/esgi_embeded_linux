@@ -29,6 +29,7 @@ httpGetAsync(theUrl, function(str){
 			}
 	});
 		console.log("data",data);
+
 });
 
 function httpGetAsync(theUrl, callback)
@@ -40,5 +41,14 @@ function httpGetAsync(theUrl, callback)
     }
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
     xmlHttp.send(null);
+}
+
+function BindingElements() {
+	$(document).ready(function(){
+
+   		document.getElementById("temp").innerHtml = temperature;
+   		console<log("Temp", temperature);
+
+	});
 }
 console.log('This would be the main JS file.');
