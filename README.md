@@ -74,6 +74,7 @@ $ sudo losetup --offset $((512*206848)) /dev/loop2 filesystem_sd
 
 ```bash
 sudo mkfs.ext4 /dev/loop2
+```
 
 ```bash
 $ sudo losetup -d /dev/loop2
