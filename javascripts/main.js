@@ -5,25 +5,28 @@ var theUrl = "https://api.mlab.com/api/1/databases/linuxem/collections/temp?apiK
 var test;
 httpGetAsync(theUrl, function(str){
 	console.log("data", str);
-	for (var i = 0; i < str.length; i++) {
-    var object = str[i];
-    for (var property in object) {
-     console.log("property", property);
-     console.log("object", object);      
-    }
     // If property names are known beforehand, you can also just do e.g.
     // alert(object.id + ',' + object.Title);
 }
 	var data = JSON.parse(str, function(k, v) {
-		console.log("k", k);
-		console.log("v", v);
-	// console.log("temp", temperature);
-	// var date = data.date;
-	// console.log("date", date);
-	// var time = data.time;
-	// console.log("time", time);
+		//console.log("k", k);
+		//console.log("v", v);
+		switch(k) {
+			case "temperature" :
+				var temperature = v;
+				console.log("temp", temperature);
+				break;
+			case "date" :
+				var dateinfo = v;
+				console.log("date", dateinfo);
+				break;
+			case "time" :
+				var time = v;
+				console.log("time", time);
+				break;
+
+		}
 	});
-	console.log("data after parse", data);
 	
 });
 
