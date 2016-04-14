@@ -28,7 +28,7 @@ httpGetAsync(theUrl, function(str){
 				break;
 			}
 	});
-		console.log("data",data);
+		BindingElements();
 
 });
 
