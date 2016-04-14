@@ -3,7 +3,7 @@
 var theUrl = "https://api.mlab.com/api/1/databases/linuxem/collections/temp?apiKey=Wsr5fq8hXd3xtNV_ERnMRSDO02J2U1kG"
 
 var test;
-httpGetAsync(theUrl, function(String str){
+httpGetAsync(theUrl, function(str){
 	console.log("data", str);
 });
 
