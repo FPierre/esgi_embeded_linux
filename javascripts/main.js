@@ -7,6 +7,12 @@ httpGetAsync(theUrl, function(str){
 	console.log("data", str);
 	var data = JSON.parse(str);
 	console.log("data after parse", str);
+	var temperature = data.temperature;
+	console.log("temp", temperature);
+	var date = data.date;
+	console.log("date", date);
+	var time = data.time;
+	console.log("time", time);
 });
 
 function httpGetAsync(theUrl, callback)
