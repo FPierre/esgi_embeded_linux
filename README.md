@@ -112,6 +112,10 @@ $ sudo mkdir bin dev etc home lib mnt proc root sbin sys tmp usr var
 $ sudo mkdir dev/pts etc/init.d usr/bin usr/sbin
 ```
 
+```bash
+$ sudo make ARCH=arm INSTALL_MOD_PATH=../../image-sd/montage/linux/ modules_install
+```
+
 ## Projet
 
 ### Requis
