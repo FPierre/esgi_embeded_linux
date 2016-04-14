@@ -47,7 +47,7 @@ function BindingElements() {
 	$(document).ready(function(){
 
    		document.getElementById("temp").innerHtml = temperature;
-   		console<log("Temp", temperature);
+   		console.log("Temp", temperature);
 
 	});
 }
