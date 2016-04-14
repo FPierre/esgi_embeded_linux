@@ -8,7 +8,8 @@ httpGetAsync(theUrl, function(str){
 	for (var i = 0; i < str.length; i++) {
     var object = str[i];
     for (var property in object) {
-        alert('item ' + i + ': ' + property + '=' + object[property]);
+     console.log("property", property);
+     console.log("object", object);      
     }
     // If property names are known beforehand, you can also just do e.g.
     // alert(object.id + ',' + object.Title);
@@ -16,11 +17,11 @@ httpGetAsync(theUrl, function(str){
 	var data = JSON.parse(str, function(k, v) {
 		console.log("k", k);
 		console.log("v", v);
-	console.log("temp", temperature);
-	var date = data.date;
-	console.log("date", date);
-	var time = data.time;
-	console.log("time", time);
+	// console.log("temp", temperature);
+	// var date = data.date;
+	// console.log("date", date);
+	// var time = data.time;
+	// console.log("time", time);
 	});
 	console.log("data after parse", data);
 	
