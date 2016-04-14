@@ -46,7 +46,7 @@ function httpGetAsync(theUrl, callback)
 function BindingElements() {
 	$(document).ready(function(){
 
-   		document.getElementById("temp").innerHtml = temperature;
+   		$('div#temp').text(temperature);
    		console.log("Temp", temperature);
 
 	});
