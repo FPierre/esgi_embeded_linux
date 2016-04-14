@@ -5,6 +5,8 @@
 Regroupements des TPs, cours et du projet de fin de semaine
 
 ## TPs
+* Rappel language C
+* FIFO en C
 
 ### TP3
 
