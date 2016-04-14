@@ -5,6 +5,8 @@ var theUrl = "https://api.mlab.com/api/1/databases/linuxem/collections/temp?apiK
 var test;
 httpGetAsync(theUrl, function(str){
 	console.log("data", str);
+	var data = JSON.parse(str);
+	console.log("data after parse", str);
 });
 
 function httpGetAsync(theUrl, callback)
