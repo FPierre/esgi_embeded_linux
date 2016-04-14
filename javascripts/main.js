@@ -30,8 +30,6 @@ httpGetAsync(theUrl, function(str){
 		}
 		console.log("data",data);
 	});
-	
-});
 
 function httpGetAsync(theUrl, callback)
 {
