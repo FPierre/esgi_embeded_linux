@@ -96,8 +96,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Ajout pour index */
-div.center{
-  margin-left: 100px;
+div.margin-left-50 {
+  margin-left: 50px;
 }
 
 #main_content h1 {

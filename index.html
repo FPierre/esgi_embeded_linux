@@ -38,32 +38,36 @@
 <h3>Regroupements des TPs, cours et du projet de fin de semaine</h3>
 
 <h4>Notions</h4>
-<ul>
-  <p><li>Sur ARM, c'est le GPU qui boot la carte (pas le CPU, pour des raisons de lecture du code sur la carte).
-    </li></p>
-  <p><li>Il est possible de booter une carte sur mémoire Flash plutôt qu'avec le GPU (la Flash est mappée sur la mémoire de la carte, l'accès se fait de façon transparente). Exemple de la Beaglebone.
-    </li></p>
-  <p><li>/sbin/init est un programme C compilé avec GCC (utilise libc). Il est utilisé pour booter la carte (le noyau lui done la main). C'est le processus parent de **tous** les les autres processus.
-    </li></p>
-</ul>
+<div class="margin-left-50">
+  <ul>
+    <p><li>Sur ARM, c'est le GPU qui boot la carte (pas le CPU, pour des raisons de lecture du code sur la carte).
+      </li></p>
+    <p><li>Il est possible de booter une carte sur mémoire Flash plutôt qu'avec le GPU (la Flash est mappée sur la mémoire de la carte, l'accès se fait de façon transparente). Exemple de la Beaglebone.
+      </li></p>
+    <p><li>/sbin/init est un programme C compilé avec GCC (utilise libc). Il est utilisé pour booter la carte (le noyau lui done la main). C'est le processus parent de **tous** les les autres processus.
+      </li></p>
+  </ul>
+</div>
 
 <h4> TPs</h4>
-<ul>
-  <p><li>Rappel language C</li></p>
-  <p><li>FIFO en C</li></p>
-</ul>
-
+<div class="margin-left-50">
+  <ul>
+    <p><li>Rappel language C</li></p>
+    <p><li>FIFO en C</li></p>
+  </ul>
+</div>
 <h4> TP3</h4>
-<ul>
-  <p><li>Création de la VM Linux (basée sur l'image Linux-EM-V3.vdi). Ubuntu Server x64</li></p>
-  <p><li>Récupération du code du Kernel v3.10</li></p>
-  <p><li>Configurations de la compilation du Kernel (ajout/suppression de modules dans le Kernel)</li></p>
-</ul>
-
+<div class="margin-left-50">
+  <ul>
+    <p><li>Création de la VM Linux (basée sur l'image Linux-EM-V3.vdi). Ubuntu Server x64</li></p>
+    <p><li>Récupération du code du Kernel v3.10</li></p>
+    <p><li>Configurations de la compilation du Kernel (ajout/suppression de modules dans le Kernel)</li></p>
+  </ul>
+</div>
 <h4> TP4</h4>
 
 <h4> Rappel des commandes à exécuter</h4>
-<div class="center">
+<div class="margin-left-50">
   <code><p>$ dd if=/dev/zero of=./filesystem_sd bs=1M count=1023</p></code>
   <code><p>
     $ du -sh filesystem_sd</p></code>
@@ -113,7 +117,7 @@
   <code><p>$ sudo make ARCH=arm INSTALL_MOD_PATH=../../image-sd/montage/linux/ modules_install</p></code>
 </div>
 <div class="image-container">
-  <img src="./images/modules_gilesystem.png">
+  <img src="./images/modules_filesystem.png">
 </div>
 
 <h4>Projet</h4>
