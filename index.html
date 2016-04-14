@@ -39,25 +39,25 @@
 
 <h4>Notions</h4>
 <ul>
-  <li><p>Sur ARM, c'est le GPU qui boot la carte (pas le CPU, pour des raisons de lecture du code sur la carte).
-    </p></li>
-  <li><p>Il est possible de booter une carte sur mémoire Flash plutôt qu'avec le GPU (la Flash est mappée sur la mémoire de la carte, l'accès se fait de façon transparente). Exemple de la Beaglebone.
-    </p></li>
-  <li><p>/sbin/init est un programme C compilé avec GCC (utilise libc). Il est utilisé pour booter la carte (le noyau lui done la main). C'est le processus parent de **tous** les les autres processus.
-    </p></li>
+  <p><li>Sur ARM, c'est le GPU qui boot la carte (pas le CPU, pour des raisons de lecture du code sur la carte).
+    </li></p>
+  <p><li>Il est possible de booter une carte sur mémoire Flash plutôt qu'avec le GPU (la Flash est mappée sur la mémoire de la carte, l'accès se fait de façon transparente). Exemple de la Beaglebone.
+    </li></p>
+  <p><li>/sbin/init est un programme C compilé avec GCC (utilise libc). Il est utilisé pour booter la carte (le noyau lui done la main). C'est le processus parent de **tous** les les autres processus.
+    </li></p>
 </ul>
 
 <h4> TPs</h4>
 <ul>
-  <li><p>Rappel language C</p></li>
-  <li><p>FIFO en C</p></li>
+  <p><li>Rappel language C</li></p>
+  <p><li>FIFO en C</li></p>
 </ul>
 
 <h4> TP3</h4>
 <ul>
-  <li><p>Création de la VM Linux (basée sur l'image Linux-EM-V3.vdi). Ubuntu Server x64</p></li>
-  <li><p>Récupération du code du Kernel v3.10</p></li>
-  <li><p>Configurations de la compilation du Kernel (ajout/suppression de modules dans le Kernel)</p></li>
+  <p><li>Création de la VM Linux (basée sur l'image Linux-EM-V3.vdi). Ubuntu Server x64</li></p>
+  <p><li>Récupération du code du Kernel v3.10</li></p>
+  <p><li>Configurations de la compilation du Kernel (ajout/suppression de modules dans le Kernel)</li></p>
 </ul>
 
 <h4> TP4</h4>
@@ -173,8 +173,8 @@ $ sudo make ARCH=arm INSTALL_MOD_PATH=../../image-sd/montage/linux/ modules_inst
 
 <h>Requis</h5>
 <ul>
-  <li><p>Connexion Internet</p></li>
-  <li><p>Connexion au Raspberry Pi (SSH ?)</p></li>
+  <p><li>Connexion Internet</li></p>
+  <p><li>Connexion au Raspberry Pi (SSH ?)</li></p>
 </ul>
 
 <h3>
