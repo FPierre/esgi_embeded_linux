@@ -95,6 +95,11 @@ h1, h2, h3, h4, h5, h6 {
                0 0 10px rgba(181, 232, 83, 0.1);
 }
 
+/*Ajout pour index */
+div.center{
+  margin-left: 100px;
+}
+
 #main_content h1 {
   font-size: 30px;
 }
