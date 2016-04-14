@@ -5,7 +5,7 @@ var theUrl = "https://api.mlab.com/api/1/databases/linuxem/collections/temp?apiK
 var test;
 httpGetAsync(theUrl, function(String str){
 	console.log("data", str);
-})
+});
 
 function httpGetAsync(theUrl, callback)
 {
