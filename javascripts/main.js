@@ -12,16 +12,16 @@ var time;
 init();
 function init() {
 	httpGetAsync(theUrl, function(str){
-	console.log("data", str);
+	console.log("str", str);
+	data = str;
+	console.log("data", data);
     // If property names are known beforehand, you can also just do e.g.
     // alert(object.id + ',' + object.Title);
 	JSON.parse(str, function(k, v) {
 		
 		console.log("k", k);
 		console.log("v", v);
-		for (var i = 0; k != null; i++) {
-			data[i] = {k, v};
-			console.log("data[i]", data[i]);
+		
 			switch(k) {
 			case "temperature" :
 				temperature = v/1000;
@@ -36,8 +36,6 @@ function init() {
 				console.log("time", time);
 				break;
 			}
-		}
-		
 	});
 		BindingElements();
 		console.log("data", data);
