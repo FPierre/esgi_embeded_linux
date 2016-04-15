@@ -28,8 +28,9 @@ for (var i = 0; i<datas.length; i++) {
 	console.log("data.temp", row.temperature);
 	console.log("data.date", row.date);
 	console.log("data.time", row.time);
-	console.log(row[datas[i]]);
+	console.log('row[datas[i]]', row[datas[i]]);
 
+	console.log('row', row);
 }
 	// JSON.parse(str, function(k, v) {
 		
