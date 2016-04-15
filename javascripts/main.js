@@ -17,8 +17,8 @@ function init() {
     // alert(object.id + ',' + object.Title);
 	JSON.parse(str, function(k, v) {
 		data[k] = v;
-		//console.log("k", k);
-		//console.log("v", v);
+		console.log("k", k);
+		console.log("v", v);
 		switch(k) {
 			case "temperature" :
 				temperature = v/1000;
