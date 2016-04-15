@@ -23,9 +23,16 @@ function init() {
 datas = JSON.parse(str);
 console.log("data", datas);
 for (var i = 0; i<datas.length; i++) {
+	row[datas[i]._id.$oid].$oid = "";
 	row[datas[i]._id.$oid].$oid = datas[i]._id;
+
+	row[datas[i]._id.$oid].temperature = "";
 	row[datas[i]._id.$oid].temperature = datas[i].temperature;
+
+	row[datas[i]._id.$oid].date = "";
 	row[datas[i]._id.$oid].date = datas[i].date;
+
+	row[datas[i]._id.$oid].time = "";
 	row[datas[i]._id.$oid].time = datas[i].time;
 
 
