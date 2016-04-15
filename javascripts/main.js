@@ -6,6 +6,7 @@ var datas;
 var temperature;
 var dateinfo;
 var time;
+var array = {};
 var row = {};
 
 
@@ -23,25 +24,19 @@ function init() {
 datas = JSON.parse(str);
 console.log("data", datas);
 for (var i = 0; i<datas.length; i++) {
-	row[datas[i]._id.$oid].$oid = "";
-	row[datas[i]._id.$oid].$oid = datas[i]._id;
-
-	row[datas[i]._id.$oid].temperature = "";
-	row[datas[i]._id.$oid].temperature = datas[i].temperature;
-
-	row[datas[i]._id.$oid].date = "";
-	row[datas[i]._id.$oid].date = datas[i].date;
-
-	row[datas[i]._id.$oid].time = "";
-	row[datas[i]._id.$oid].time = datas[i].time;
+	array[datas[i]._id.$oid] = datas[i];
+	// row[datas[i]._id.$oid].$oid = datas[i]._id;
+	// row[datas[i]._id.$oid].temperature = datas[i].temperature;
+	// row[datas[i]._id.$oid].date = datas[i].date;
+	// row[datas[i]._id.$oid].time = datas[i].time;
 
 
-	console.log("data.temp", row.temperature);
-	console.log("data.date", row.date);
-	console.log("data.time", row.time);
-	console.log('row[datas[i]]', row[datas[i]]);
+	// console.log("data.temp", row.temperature);
+	// console.log("data.date", row.date);
+	// console.log("data.time", row.time);
+	// console.log('row[datas[i]]', row[datas[i]]);
 
-	console.log('row', row);
+	console.log('array', array);
 }
 	// JSON.parse(str, function(k, v) {
 		
