@@ -22,7 +22,7 @@ function init() {
 		console.log("k", k);
 		console.log("v", v);
 		
-			switch(k) {
+		switch(k) {
 			case "temperature" :
 				temperature = v/1000;
 				console.log("temp", temperature);
