@@ -6,7 +6,7 @@ var datas;
 var temperature;
 var dateinfo;
 var time;
-var row = [];
+var row = {};
 
 
 //document.getElementById("#refresh").onclick = function () { init() };
