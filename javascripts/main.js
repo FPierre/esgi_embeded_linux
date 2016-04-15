@@ -15,7 +15,7 @@ httpGetAsync(theUrl, function(str){
 		//console.log("v", v);
 		switch(k) {
 			case "temperature" :
-				temperature = v/10000;
+				temperature = v/1000;
 				console.log("temp", temperature);
 				break;
 			case "date" :
