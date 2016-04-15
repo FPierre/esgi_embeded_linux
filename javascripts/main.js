@@ -53,7 +53,7 @@ for (var i = 0; i<datas.length; i++) {
 	// 		}
 	// });
 		BindingElements();
-		console.log("data", data);
+		//console.log("data", data);
 
 });
 
