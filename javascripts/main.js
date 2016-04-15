@@ -48,6 +48,10 @@ function BindingElements() {
 
    		$('div#temp').text(temperature);
    		console.log("Temp", temperature);
+   		$('div#date').text(dateinfo);
+   		console.log("Date", temperature);
+   		$('div#time').text(time);
+   		console.log("Time", time);
 
 	});
 }
