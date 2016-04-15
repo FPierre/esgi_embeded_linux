@@ -100,7 +100,7 @@ div.margin-left-50 {
   margin-left: 50px;
 }
 
-margin-left-50 > code {
+.margin-left-50 > code {
   background-color: transparent;
 }
 
