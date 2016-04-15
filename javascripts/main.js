@@ -6,6 +6,7 @@ var datas;
 var temperature;
 var dateinfo;
 var time;
+var row;
 
 
 //document.getElementById("#refresh").onclick = function () { init() };
@@ -22,11 +23,12 @@ function init() {
 datas = JSON.parse(str);
 console.log("data", datas);
 for (var i = 0; i<datas.length; i++) {
-	console.log("data.temp", data.temperature);
-	console.log("data.date", data.date);
-	console.log("data.time", data.time);
-	data[datas[i]._id.$oid] = datas[i];
-	console.log(data[datas[i]]);
+	row[datas[i]._id.$oid] = datas[i];
+
+	console.log("data.temp", row.temperature);
+	console.log("data.date", row.date);
+	console.log("data.time", row.time);
+	console.log(row[datas[i]]);
 
 }
 	// JSON.parse(str, function(k, v) {
