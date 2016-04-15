@@ -2,7 +2,7 @@
 
 var theUrl = "https://api.mlab.com/api/1/databases/linuxem/collections/temperature?apiKey=Wsr5fq8hXd3xtNV_ERnMRSDO02J2U1kG"
 
-var data;
+var data = [];
 var temperature;
 var dateinfo;
 var time;
@@ -15,7 +15,8 @@ function init() {
 	console.log("data", str);
     // If property names are known beforehand, you can also just do e.g.
     // alert(object.id + ',' + object.Title);
-	data = JSON.parse(str, function(k, v) {
+	JSON.parse(str, function(k, v) {
+		data[k] = v;
 		//console.log("k", k);
 		//console.log("v", v);
 		switch(k) {
@@ -34,6 +35,7 @@ function init() {
 			}
 	});
 		BindingElements();
+		console.log("data", data);
 
 });
 
