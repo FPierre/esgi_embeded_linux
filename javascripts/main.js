@@ -22,11 +22,8 @@ function init() {
 
 
 datas = JSON.parse(str);
-console.log("data", datas);
 for (var i = 0; i<datas.length; i++) {
-	console.log("0");
 	if(datas[i + 1]) {
-		console.log("1");
 		if(datas[i].date > datas[i + 1].date) {
 			row = datas[i];
 		} else if (datas[i].date < datas[i + 1].date) {
@@ -45,7 +42,6 @@ for (var i = 0; i<datas.length; i++) {
 			row = datas[i];
 		}
 	}
-console.log("row", row);
 
 
 	//array[datas[i]._id.$oid] = datas[i];
@@ -103,24 +99,24 @@ function httpGetAsync(theUrl, callback)
 
 function BindingElements() {
 	$(document).ready(function(){
-		if(temperature == "" || temperature == undefined) {
+		if(row.temperature == "" || row.temperature == undefined) {
    			$('div#temp').text("Error on temperature");
 		} else {
-   			$('div#temp').text(temperature);
+   			$('div#temp').text(row.temperature);
 		}
-   		console.log("Temp", temperature);
-		if(dateinfo == "" || dateinfo == undefined) {
+   		console.log("Temp", row.temperature);
+		if(row.date == "" || row.date == undefined) {
    			$('div#date').text("Error on date");
 		} else {
-   			$('div#date').text(dateinfo);
+   			$('div#date').text(row.date);
 		}
-   		console.log("Date", dateinfo);
-		if(time == "" || time == undefined) {
+   		console.log("Date", row.date);
+		if(row.time == "" || row.time == undefined) {
    			$('div#time').text("Error on time");
 		} else {
-   			$('div#time').text(time);
+   			$('div#time').text(row.time);
 		}
-   		console.log("Time", time);
+   		console.log("Time", row.time);
    		$('#refresh').click(function(){
        		init();
     	});
