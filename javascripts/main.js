@@ -19,7 +19,7 @@ function init() {
 		
 		console.log("k", k);
 		console.log("v", v);
-		for (var i = 0; k != null) {
+		for (var i = 0; k != null; i++) {
 			data[i] = {k, v};
 			console.log("data[i]", data[i]);
 			switch(k) {
