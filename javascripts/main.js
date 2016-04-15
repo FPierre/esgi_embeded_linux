@@ -8,7 +8,8 @@ var dateinfo;
 var time;
 
 
-document.getElementById("refresh").onclick = function () { init() };
+//document.getElementById("#refresh").onclick = function () { init() };
+init();
 function init() {
 	httpGetAsync(theUrl, function(str){
 	console.log("data", str);
@@ -69,7 +70,9 @@ function BindingElements() {
    			$('div#time').text(time);
 		}
    		console.log("Time", time);
-
+   		$('#refresh').click(function(){
+       		init();
+    	});
 	});
 }
 console.log('This would be the main JS file.');
