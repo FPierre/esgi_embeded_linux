@@ -15,7 +15,7 @@ httpGetAsync(theUrl, function(str){
 		//console.log("v", v);
 		switch(k) {
 			case "temperature" :
-				temperature = v;
+				temperature = v/10000;
 				console.log("temp", temperature);
 				break;
 			case "date" :
@@ -46,7 +46,7 @@ function httpGetAsync(theUrl, callback)
 function BindingElements() {
 	$(document).ready(function(){
 
-   		$('div#temp').text(temperature/10000);
+   		$('div#temp').text(temperature);
    		console.log("Temp", temperature);
    		$('div#date').text(dateinfo);
    		console.log("Date", temperature);
