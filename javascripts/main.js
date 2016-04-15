@@ -6,7 +6,11 @@ var data;
 var temperature;
 var dateinfo;
 var time;
-httpGetAsync(theUrl, function(str){
+
+
+document.getElementById("refresh").onclick = function () { init() };
+function init() {
+	httpGetAsync(theUrl, function(str){
 	console.log("data", str);
     // If property names are known beforehand, you can also just do e.g.
     // alert(object.id + ',' + object.Title);
@@ -31,6 +35,8 @@ httpGetAsync(theUrl, function(str){
 		BindingElements();
 
 });
+
+}
 
 function httpGetAsync(theUrl, callback)
 {
