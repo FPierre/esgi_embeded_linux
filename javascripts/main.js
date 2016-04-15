@@ -45,12 +45,23 @@ function httpGetAsync(theUrl, callback)
 
 function BindingElements() {
 	$(document).ready(function(){
-
-   		$('div#temp').text(temperature);
+		if(temperature == "" || temperature == undefined) {
+   			$('div#temp').text("Error on temperature");
+		} else {
+   			$('div#temp').text(temperature);
+		}
    		console.log("Temp", temperature);
-   		$('div#date').text(dateinfo);
-   		console.log("Date", temperature);
-   		$('div#time').text(time);
+		if(dateinfo == "" || dateinfo == undefined) {
+   			$('div#date').text("Error on date");
+		} else {
+   			$('div#date').text(dateinfo);
+		}
+   		console.log("Date", dateinfo);
+		if(time == "" || time == undefined) {
+   			$('div#time').text("Error on time");
+		} else {
+   			$('div#time').text(time);
+		}
    		console.log("Time", time);
 
 	});
