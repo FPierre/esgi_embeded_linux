@@ -39,7 +39,9 @@ for (var i = 0; i<datas.length; i++) {
 	console.log('array', array);
 }
 for (var i = 0; i<array.length; i++) {
+	console.log("0");
 	if(array[i + 1]) {
+		console.log("1");
 		if(array[i].date > array[i + 1].date) {
 			row = array[i];
 		} else if (array[i].date < array[i + 1].date) {
