@@ -16,10 +16,13 @@ function init() {
     // If property names are known beforehand, you can also just do e.g.
     // alert(object.id + ',' + object.Title);
 	JSON.parse(str, function(k, v) {
-		data[k] = v;
+		
 		console.log("k", k);
 		console.log("v", v);
-		switch(k) {
+		for (var i = 0; k != null) {
+			data[i] = {k, v};
+			console.log("data[i]", data[i]);
+			switch(k) {
 			case "temperature" :
 				temperature = v/1000;
 				console.log("temp", temperature);
@@ -33,6 +36,8 @@ function init() {
 				console.log("time", time);
 				break;
 			}
+		}
+		
 	});
 		BindingElements();
 		console.log("data", data);
