@@ -24,7 +24,31 @@ function init() {
 datas = JSON.parse(str);
 console.log("data", datas);
 for (var i = 0; i<datas.length; i++) {
-	array[datas[i]._id.$oid] = datas[i];
+	console.log("0");
+	if(datas[i + 1]) {
+		console.log("1");
+		if(datas[i].date > datas[i + 1].date) {
+			row = datas[i];
+		} else if (datas[i].date < datas[i + 1].date) {
+			row = datas[i+1];
+		}
+		if (datas[i].date == datas[i+1].date){
+			if(datas[i].time > datas[i + 1].time) {
+				row = datas[i];
+			} else if (datas[i].time < datas[i + 1].time) {
+				row = datas[i+1];
+			} else {
+				row = datas[i];
+			}
+
+		} else {
+			row = datas[i];
+		}
+	}
+console.log("row", row);
+
+
+	//array[datas[i]._id.$oid] = datas[i];
 	// row[datas[i]._id.$oid].$oid = datas[i]._id;
 	// row[datas[i]._id.$oid].temperature = datas[i].temperature;
 	// row[datas[i]._id.$oid].date = datas[i].date;
@@ -38,30 +62,7 @@ for (var i = 0; i<datas.length; i++) {
 
 	console.log('array', array);
 }
-for (var i = 0; i<array.length; i++) {
-	console.log("0");
-	if(array[i + 1]) {
-		console.log("1");
-		if(array[i].date > array[i + 1].date) {
-			row = array[i];
-		} else if (array[i].date < array[i + 1].date) {
-			row = array[i+1];
-		}
-		if (array[i].date == array[i+1].date){
-			if(array[i].time > array[i + 1].time) {
-				row = array[i];
-			} else if (array[i].time < array[i + 1].time) {
-				row = array[i+1];
-			} else {
-				row = array[i];
-			}
-
-		} else {
-			row = array[i];
-		}
-	}
-}
-console.log("row", row);
+	
 	// JSON.parse(str, function(k, v) {
 		
 	// 	console.log("k", k);
