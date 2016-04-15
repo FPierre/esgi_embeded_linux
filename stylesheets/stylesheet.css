@@ -137,24 +137,12 @@ div.separator {
   background-color: #fff;
   border-color: #ccc;
 }
-.mybtn.btn-default:focus,
-.mybtn.btn-default.focus {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
-}
 .mybtn.btn-default:hover {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
-.mybtn.btn-default:active,
-.mybtn.btn-default.active,
-.mybtn.open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-} 
+
 
 /*----------- */
 
