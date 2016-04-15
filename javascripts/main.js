@@ -2,7 +2,7 @@
 
 var theUrl = "https://api.mlab.com/api/1/databases/linuxem/collections/temperature?apiKey=Wsr5fq8hXd3xtNV_ERnMRSDO02J2U1kG"
 
-var data;
+var datas;
 var temperature;
 var dateinfo;
 var time;
@@ -19,12 +19,15 @@ function init() {
     // alert(object.id + ',' + object.Title);
 
 
-data = JSON.parse(str);
-console.log("data", data);
-for (var i = 0; i<data.length; i++) {
+datas = JSON.parse(str);
+console.log("data", datas);
+for (var i = 0; i<datas.length; i++) {
 	console.log("data.temp", data.temperature);
 	console.log("data.date", data.date);
 	console.log("data.time", data.time);
+	data[datas[i]._id.$oid] = datas[i];
+	console.log(data[datas[i]]);
+
 }
 	// JSON.parse(str, function(k, v) {
 		
