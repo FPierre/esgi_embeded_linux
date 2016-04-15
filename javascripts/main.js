@@ -102,9 +102,9 @@ function BindingElements() {
 		if(row.temperature == "" || row.temperature == undefined) {
    			$('div#temp').text("Error on temperature");
 		} else {
-   			$('div#temp').text(row.temperature);
+   			$('div#temp').text(row.temperature / 1000);
 		}
-   		console.log("Temp", row.temperature);
+   		console.log("Temp", row.temperature / 1000);
 		if(row.date == "" || row.date == undefined) {
    			$('div#date').text("Error on date");
 		} else {
