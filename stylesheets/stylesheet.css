@@ -109,6 +109,9 @@ div.separator {
     margin-bottom: 20px;
     margin-top: 20px;
   } 
+  div#tempUnit {
+    margin-left: 5px;
+  }
 
 .mybtn {
   display: inline-block;
